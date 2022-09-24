@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Lora', serif;
+    font-family:'Lucida Sans';
 }
 
 .container {
@@ -15,12 +15,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgb(251, 242, 133);
+    background: rgb(58, 58, 58);
     background: radial-gradient(
       circle,
-      rgba(251, 242, 133, 0.6334908963585435) 0%,
-      rgba(224, 196, 91, 0.8407738095238095) 35%,
-      rgba(230, 224, 113, 1) 100%
+      rgb(232, 232, 232) 0%,
+      rgb(154, 154, 154) 35%,
+      rgb(108, 108, 108) 100%
     );
 }
 
@@ -34,18 +34,16 @@ body {
 #location {
     font-size: 3rem;
     font-weight: 800;
-    font-style: italic;
+    font-family:'Lucida Sans';
+
   }
 
 .desc {
     font-size: 1.25rem;
     text-transform: capitalize;
+
 }
 
-.circle {
-    background-color: black;
-    border-radius: 50px;
-    height: 15px;
-    width: 15px;
-    margin: 0 15px;
+.gap {
+    margin: 0 1rem;
 }
