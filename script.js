@@ -29,7 +29,7 @@ window.addEventListener('load', () => {
         .then((data) => {
             const { temp } = data.main;
             const place = data.name;
-            const { description, icon } = data.weather[0];
+            const { main, description, icon } = data.weather[0];
             const { sunrise, sunset } = data.sys;
             const { time } = data.dt;
 
@@ -46,6 +46,12 @@ window.addEventListener('load', () => {
             desc.textContent = `${description}`;
             tempC.textContent = `${temp.toFixed(2)} °C`;
             tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
+
+            const background = "images/" + main + ".jpg";
+            const container = document.querySelector(".container");
+
+            container.style.backgroundImage = `url(${background})`;
+            container.style.backgroundSize = "cover";
         });
       });
     }
